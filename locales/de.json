@@ -1,0 +1,17 @@
+{
+    "components": {
+        "menu": {
+            "textItem": {
+                "home": "Startseite",
+                "aboutUs": "Über Uns",
+                "portfolio": "Portfolio",
+                "administrationPanel": "Verwaltungspanel",
+                "contact": "Kontakt"
+            }
+        },
+        "header": {
+            "headerText": "Professionelle Subunternehmer für Lüftungs- und Elektroarbeiten - Belgien und Polen",
+            "text": "Entwickelt Ihr Unternehmen Projekte in Belgien oder Polen und benötigt erfahrene Subunternehmer? Wir spezialisieren uns auf die Bereitstellung umfassender Dienstleistungen im Bereich Lüftung und Elektrik, bieten qualifizierte Arbeiter an und garantieren höchste Arbeitsqualität. Unser Team besteht aus Experten für Lüftungs- und Elektroinstallationen, bereit, Ihre Projekte sowohl im großen als auch im kleineren Rahmen zu unterstützen. Mit uns können Sie sich auf Pünktlichkeit, Professionalität und Sicherheit in jeder Phase der Zusammenarbeit verlassen. Kontaktieren Sie uns heute, um zu besprechen, wie wir Ihre Initiativen in Belgien und Polen unterstützen können."
+        }
+    }
+}
