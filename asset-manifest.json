@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.199670b2.css",
-    "main.js": "/static/js/main.02311c13.js",
+    "main.js": "/static/js/main.4a4cf1d0.js",
     "static/media/2149235_medium2000.png": "/static/media/2149235_medium2000.2fc00f2e4363ffeb54b1.png",
     "static/media/Zdjęcie WhatsApp 2023-09-14 asdsdo 09.30.00.jpg": "/static/media/Zdjęcie WhatsApp 2023-09-14 asdsdo 09.30.00.b0f9f764954ee97daad5.jpg",
     "static/media/logo-removebg-preview.png": "/static/media/logo-removebg-preview.911e58ca2c0cc7d09c6d.png",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.199670b2.css.map": "/static/css/main.199670b2.css.map",
-    "main.02311c13.js.map": "/static/js/main.02311c13.js.map"
+    "main.4a4cf1d0.js.map": "/static/js/main.4a4cf1d0.js.map"
   },
   "entrypoints": [
     "static/css/main.199670b2.css",
-    "static/js/main.02311c13.js"
+    "static/js/main.4a4cf1d0.js"
   ]
 }
