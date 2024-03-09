@@ -1,0 +1,17 @@
+{
+    "components": {
+        "menu": {
+            "textItem": {
+                "home": "Strona główna",
+                "aboutUs": "O Nas",
+                "portfolio": "Portfolio",
+                "administrationPanel": "Panel Administracyjny",
+                "contact": "Kontakt"
+            }
+        },
+        "header": {
+            "headerText": " Profesjonalni Podwykonawcy Wentylacji i Elektryki - Belgia i Polska",
+            "text": "Twoja firma rozwija projekty w Belgii lub Polsce i potrzebuje doświadczonych podwykonawców? Specjalizujemy się w świadczeniu kompleksowych usług wentylacyjnych i elektrycznych, zapewniając wykwalifikowanych pracowników i gwarantując najwyższą jakość wykonania. Nasz zespół to eksperci w dziedzinie instalacji wentylacyjnych i elektrycznych, gotowi wspierać Twoje projekty zarówno na dużą, jak i mniejszą skalę. Z nami masz pewność terminowości, profesjonalizmu i bezpieczeństwa na każdym etapie współpracy. Skontaktuj się z nami już dziś, aby omówić, jak możemy wspierać Twoje inicjatywy w Belgii i Polsce."
+        }
+    }
+}
