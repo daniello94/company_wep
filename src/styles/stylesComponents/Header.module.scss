@@ -1,0 +1,47 @@
+@import "../main.scss";
+.imgEmployee {
+    position: absolute;
+    right: 20px;
+    z-index: 4;
+}
+.logoCompany {
+    width: 130px;
+    z-index: 4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+@media all and (max-width: 940px) {
+    .imgEmployee {
+        display: none;
+    }
+}
+@media all and (min-width: 941px) {
+    .imgEmployee {
+        width: 220px;
+        top: 23%;
+    }
+    .logoCompany {
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+}
+@include respond(large) {
+    .imgEmployee {
+        width: 270px;
+        top: 15%;
+    }
+    .logoCompany{
+        width: 150px;
+        position: absolute;
+        left: 30px;
+    }
+}
+@include respond(extra-large) {
+    .imgEmployee {
+        width: 400px;
+        top: 165px;
+        z-index: 4;
+    }
+}

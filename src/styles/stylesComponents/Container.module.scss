@@ -1,0 +1,128 @@
+@import "../main.scss";
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 99.9%;
+    height: auto;
+}
+.menuContainer {
+    width: 100%;
+    margin-left: auto;
+    position: absolute;
+    z-index: 7000;
+    background-attachment: transparent;
+}
+.headerContainer {
+    width: 100%;
+    height: auto;
+    background-image: url("../../media/picture/header/Zdjęcie\ WhatsApp\ 2023-09-14\ asdsdo\ 09.30.00.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.administrationContainer {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../media/picture/images/biznes_images.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.blackBlok {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.textContext {
+    z-index: 6;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+.containerBlokRow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 3;
+}
+@include respond(small) {
+    .textContext {
+        align-items: flex-start;
+    }
+}
+@include respond(extra-small) {
+}
+@include respond(medium) {
+    .textContext {
+        margin-top: 10px;
+        align-items: center;
+    }
+}
+@include respond(extra-medium) {
+    .container {
+        max-width: 100%;
+    }
+    .menuContainer {
+        width: auto;
+        right: 0;
+        font-size: 16px;
+    }
+    .textContext {
+        margin-top: 50px;
+        align-items: flex-start;
+        width: 80%;
+    }
+    .containerBlokRow {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 98%;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px;
+    }
+}
+@include respond(large) {
+    .container {
+        max-width: 100%;
+    }
+    .textContext {
+        width: 60%;
+        margin-left: 13%;
+    }
+    .menuContainer {
+        right: 0;
+    }
+}
+@include respond(extra-large) {
+    .container {
+        max-width: 100%;
+    }
+    .headerContainer {
+        height: 90vh;
+        .textContext {
+            height: 70vh;
+        }
+    }
+}
+@include respond(large-big) {
+    .container {
+        max-width: 100%;
+    }
+    .menuContainer {
+        width: auto;
+    }
+}

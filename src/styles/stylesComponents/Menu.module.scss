@@ -1,0 +1,122 @@
+@import "../main.scss";
+.iconMobile {
+    font-size: 45px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    color: $green-color;
+    transition: 0.8s;
+    &:hover {
+        color: $blue-color;
+    }
+}
+.close {
+    display: none;
+}
+.flagCountry {
+    width: 50px;
+    height: auto;
+    margin-bottom: 3px;
+    margin-left: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.mainNav {
+    width: 100%;
+    .active {
+        display: contents;
+        width: 100%;
+        .contentOpenMenu {
+            background-color: $white-color-05;
+            border-radius: 0 0 0 20px;
+            width: 100%;
+            padding: 5px;
+            .iconMobileClose {
+                font-size: 25px;
+                position: absolute;
+                transition: 0.8s;
+                cursor: pointer;
+                &:hover {
+                    color: red;
+                    font-size: 30px;
+                }
+            }
+            .ulList {
+                list-style: none;
+                display: block;
+                .myItem {
+                    margin-bottom: 4px;
+                    padding: 5px;
+                    .flagCountry {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+            .flagsContainer {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                .flagCountry {
+                    margin-left: 30px;
+                    padding: 10px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+@include respond(extra-medium) {
+    .iconMobile,
+    .iconMobileClose {
+        display: none;
+    }
+    .mainNav {
+        width: 100%;
+        position: relative;
+        margin-left: auto;
+        margin-right: 0;
+        .close {
+            display: contents;
+            width: 100%;
+            .contentOpenMenu {
+                background-color: $white-color-05;
+                border-radius: 0 0 0 25px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: flex-start;
+                .ulList {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    list-style: none;
+                    justify-content: space-around;
+                    .myItem {
+                        margin-left: 30px;
+                        .flagCountry {
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .flagsContainer {
+                    width: 100%;
+                    height: 45px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 10px;
+                    .flagCountry {
+                        margin-left: 30px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

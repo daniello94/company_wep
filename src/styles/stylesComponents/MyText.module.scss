@@ -1,0 +1,17 @@
+@import "../main.scss";
+.text{
+    color: $white-color-09;
+    margin-left: 3px;
+    max-width: 92%;
+    letter-spacing: 1px;
+}
+@include respond(medium) {
+  .text{
+    max-width: 96%;
+  }
+}
+@include respond(large){
+  .text{
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../main.scss";
+.header {
+  color: $silver-color;
+  text-align: left;
+  margin-left: 5px;
+  letter-spacing: 2px;
+  max-width: 95%;
+}
+.white {
+  color: $white-color-05;
+}
+.red {
+  color: $red-color;
+}
+@include respond(extra-small) {
+  .header {
+    max-width: 90%;
+  }
+}
+@include respond(medium) {
+  .header {
+    max-width: 68%;
+  }
+}
+@include respond(large) {
+  .header {
+    max-width: 80%;
+    margin-left: 20px;
+  }
+}

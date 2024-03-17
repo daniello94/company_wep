@@ -1,0 +1,65 @@
+@import "../main.scss";
+%commonMenuContent {
+    width: 100%;
+}
+.menu {
+    z-index: 7000;
+    @extend %commonMenuContent;
+    background-color: $white-color-05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .iconMobile,
+    .iconCloseMobile {
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .close {
+        display: none;
+    }
+    .active {
+        display: contents;
+        .contentOpenMenu {
+            .ulList {
+                list-style: none;
+            }
+        }
+    }
+}
+.viewsContent {
+    @extend %commonMenuContent;
+    margin-top: 40px;
+    background-color: $white-color-05;
+    box-shadow: 4px 6px 8px $silver_color;
+    padding: 10px;
+}
+
+@include respond(extra-medium) {
+    .menu {
+        margin-top: 0;
+        position: static;
+        width: 29%;
+        border-radius: 2px 15px 2px 15px;
+        box-shadow: 3px 3px 4px $red-color;
+        .active {
+            display: none;
+        }
+        .close {
+            display: flex;
+            flex-direction: column;
+            .iconMobile,
+            .iconCloseMobile {
+                display: none;
+            }
+            .contentOpenMenu {
+                .ulList {
+                    list-style: none;
+                }
+            }
+        }
+    }
+    .viewsContent {
+        margin-top: 60px;
+        width: 69%;
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "translation": {
+        "key": "fr klucz"
+      },
+    "components": {
+        "menu": {
+            "textItem": {
+                "home": "Accueil",
+                "aboutUs": "À Propos",
+                "portfolio": "Portefeuille",
+                "administrationPanel": "Panneau d'Administration",
+                "contact": "Contact"
+            }
+        },
+        "header": {
+            "headerText": "Sous-traitants professionnels pour la ventilation et l'électricité - Belgique et Pologne",
+            "text": "Votre entreprise développe des projets en Belgique ou en Pologne et a besoin de sous-traitants expérimentés? Nous sommes spécialisés dans la fourniture de services complets en ventilation et électricité, offrant des travailleurs qualifiés et garantissant la plus haute qualité de travail. Notre équipe est composée d'experts en installations de ventilation et électriques, prêts à soutenir vos projets à grande et petite échelle. Avec nous, vous pouvez être assuré de la ponctualité, du professionnalisme et de la sécurité à chaque étape de la coopération. Contactez-nous aujourd'hui pour discuter de la manière dont nous pouvons soutenir vos initiatives en Belgique et en Pologne."
+        },
+        "administrationPanel": {
+            "menu": {
+                "gallery": "Galerie"
+            }
+        }
+    }
+}
