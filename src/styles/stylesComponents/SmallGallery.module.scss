@@ -1,0 +1,32 @@
+.containerImageGallery {
+    ul {
+        li {
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                flex: 0 0 auto;
+                list-style: none;
+                li {
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        cursor: pointer;
+                        margin-left: 10px;
+                        .active {
+                            position: fixed;
+                            top: 30px;
+                            left: 20px;
+                            width: 90%;
+                            width: 60%;
+                        }
+                        .disabled {
+                            position: static;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

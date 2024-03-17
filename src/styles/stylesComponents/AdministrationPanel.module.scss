@@ -32,6 +32,8 @@
     background-color: $white-color-05;
     box-shadow: 4px 6px 8px $silver_color;
     padding: 10px;
+    height: 85vh;
+    overflow-y: auto;
 }
 
 @include respond(extra-medium) {
