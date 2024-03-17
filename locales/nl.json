@@ -1,4 +1,7 @@
 {
+    "translation": {
+        "key": "NL klucz"
+    },
     "components": {
         "menu": {
             "textItem": {
@@ -12,6 +15,11 @@
         "header": {
             "headerText": "Professionele Onderaannemers voor Ventilatie en Elektriciteit - België en Polen",
             "text": "Ontwikkelt uw bedrijf projecten in België of Polen en heeft u ervaren onderaannemers nodig? Wij zijn gespecialiseerd in het leveren van uitgebreide ventilatie- en elektriciteitsdiensten, bieden geschoolde werknemers en garanderen de hoogste kwaliteit van werk. Ons team bestaat uit experts op het gebied van ventilatie- en elektrische installaties, klaar om uw projecten op zowel grote als kleinere schaal te ondersteunen. Met ons bent u verzekerd van tijdigheid, professionaliteit en veiligheid in elke fase van de samenwerking. Neem vandaag nog contact met ons op om te bespreken hoe we uw initiatieven in België en Polen kunnen ondersteunen."
+        },
+        "administrationPanel": {
+            "menu": {
+                "gallery": "Galerie"
+            }
         }
     }
 }

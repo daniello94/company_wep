@@ -1,4 +1,7 @@
 {
+    "translation": {
+        "key": "en klucz"
+    },
     "components": {
         "menu": {
             "textItem": {
@@ -12,6 +15,11 @@
         "header": {
             "headerText": "Professional Subcontractors for Ventilation and Electrical Services - Belgium and Poland",
             "text": "Is your company developing projects in Belgium or Poland and in need of experienced subcontractors? We specialize in providing comprehensive ventilation and electrical services, offering skilled workers and guaranteeing the highest quality of work. Our team consists of experts in ventilation and electrical installations, ready to support your projects on both a large and smaller scale. With us, you can be assured of timeliness, professionalism, and safety at every stage of cooperation. Contact us today to discuss how we can support your initiatives in Belgium and Poland."
+        },
+        "administrationPanel": {
+            "menu": {
+                "gallery": "Gallery"
+            }
         }
     }
 }
