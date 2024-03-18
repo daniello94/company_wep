@@ -38,20 +38,30 @@
                 margin-left: 0;
                 padding: 0;
                 li {
+                    position: relative;
+                    width: 150px;
+                    height: 150px;
                     img {
-                        width: 150px;
-                        height: 150px;
+                        width: 98%;
+                        height: 96%;
                         cursor: pointer;
                         margin-right: 10px;
+                    }
+                    .btnContent {
+                        position: absolute;
+                        bottom: 0;
+                        left: auto;
+                        right: auto;
+                        width: 100%;
                     }
                 }
             }
         }
     }
-    .active{
+    .active {
         display: contents;
     }
-    .disabled{
+    .disabled {
         display: none;
     }
 }

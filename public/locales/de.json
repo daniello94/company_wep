@@ -21,5 +21,23 @@
                 "gallery": "Galerie"
             }
         }
-    }
+    },
+    "gallery": {
+        "btn": {
+            "createGallery": "Neue Galerie",
+            "addPhotos": "Neue Fotos hinzufügen",
+            "nameGallery": "Sammlungsnamen hinzufügen"
+        },
+        "MyHeader": "Meine Galerien",
+        "notFoundGallery": "Keine Galerien verfügbar",
+        "placeholder": "Name der Sammlung",
+        "textAlert": {
+            "nameGallery": "Bitte geben Sie einen Galerienamen an.",
+            "cornetCreate": "Die Galerie wurde erstellt. Sie können jetzt Fotos hinzufügen.",
+            "errorCreate": "Beim Erstellen der Galerie ist ein Fehler aufgetreten.",
+            "errorAddPhoto": "Erstellen Sie zuerst eine Galerie und wählen Sie Fotos aus.",
+            "correctAddPhoto": "Die Fotos wurden der Galerie hinzugefügt.",
+            "errorAddImage": "Beim Hinzufügen der Fotos ist ein Fehler aufgetreten."
+        }
+    }    
 }

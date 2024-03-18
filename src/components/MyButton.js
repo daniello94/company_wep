@@ -5,7 +5,8 @@ const MyButton = (props) => {
         styles.button,
         props.centerLarge ? styles.centerLarge : null,
         props.stylesLink ? styles.buttonMenu : null,
-        props.active ? styles.clickButton : {}
+        props.active ? styles.clickButton : {},
+        props.btnGallery ? styles.galleryBtn : null
     ]
     const classNames = baseClasses.filter(Boolean).join(' ');
     return (

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import styles from "../styles/stylesComponents/ViewsGallery.module.scss";
 import Container from "../components/Container";
 import { oneGallery } from "../routers/api";
-import styles from "../styles/stylesComponents/ViewsGallery.module.scss";
 import { FiXSquare } from "react-icons/fi";
 
 export default function ViewsGallery(props) {
@@ -31,11 +31,11 @@ export default function ViewsGallery(props) {
             <FiXSquare className={styles.closedGallery} onClick={() => props.setActive(false)} />
             <div className={styles.contentGallery}>
                 <div className={styles.activeImage}>
-                    <img src={activeIMG} alt="wybrane" />
+                    <img src={activeIMG} alt="ViewsPhoto" />
                 </div>
                 <div className={styles.dataImages}>
                     {Array.isArray(viewsGallery.photos) && viewsGallery.photos.map((image, index) => (
-                        <img onClick={() => setIMG(image.photoUrl)} key={index} src={image.photoUrl} alt={image.namePhoto} style={{ maxWidth: '100px', maxHeight: '100px', margin: '10px' }} />
+                        <img onClick={() => setIMG(image.photoUrl)} key={index} src={image.photoUrl} alt={image.namePhoto} />
                     ))}
                 </div>
             </div>

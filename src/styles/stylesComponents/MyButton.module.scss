@@ -67,6 +67,11 @@
         border-radius: 50%;
     }
 }
+.galleryBtn{
+    width: 45%;
+    font-size: 10px;
+    margin-left: 3px;
+}
 @include respond(large) {
     .centerLarge {
         margin-left: auto;

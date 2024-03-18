@@ -20,6 +20,24 @@
             "menu": {
                 "gallery": "Gallery"
             }
-        }
+        },
+        "gallery": {
+            "btn": {
+                "createGallery": "New Gallery",
+                "addPhotos": "Add New Photos",
+                "nameGallery": "Add Collection Name"
+            },
+            "MyHeader": "My Galleries",
+            "notFoundGallery": "No Galleries Available",
+            "placeholder": "Collection Name",
+            "textAlert": {
+                "nameGallery": "Please provide a gallery name.",
+                "cornetCreate": "Gallery has been created. You can now add photos.",
+                "errorCreate": "An error occurred while creating the gallery.",
+                "errorAddPhoto": "First create a gallery and select photos.",
+                "correctAddPhoto": "Photos have been added to the gallery.",
+                "errorAddImage": "An error occurred while adding photos."
+            }
+        }        
     }
 }
