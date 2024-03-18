@@ -1,7 +1,7 @@
 {
     "translation": {
         "key": "fr klucz"
-      },
+    },
     "components": {
         "menu": {
             "textItem": {
@@ -19,6 +19,24 @@
         "administrationPanel": {
             "menu": {
                 "gallery": "Galerie"
+            }
+        },
+        "gallery": {
+            "btn": {
+                "createGallery": "Nouvelle Galerie",
+                "addPhotos": "Ajouter de nouvelles photos",
+                "nameGallery": "Ajouter un nom de collection"
+            },
+            "MyHeader": "Mes Galeries",
+            "notFoundGallery": "Aucune galerie disponible",
+            "placeholder": "Nom de la Collection",
+            "textAlert": {
+                "nameGallery": "Veuillez fournir un nom pour la galerie.",
+                "cornetCreate": "La galerie a été créée. Vous pouvez maintenant ajouter des photos.",
+                "errorCreate": "Une erreur s'est produite lors de la création de la galerie.",
+                "errorAddPhoto": "Créez d'abord une galerie et choisissez des photos.",
+                "correctAddPhoto": "Les photos ont été ajoutées à la galerie.",
+                "errorAddImage": "Une erreur s'est produite lors de l'ajout des photos."
             }
         }
     }
