@@ -1,4 +1,3 @@
-// Plik api.js
 import axios from "axios";
 
 const API_URL = "https://ventiltion-94d328b29b99-b913714c385c.herokuapp.com/";
@@ -22,4 +21,8 @@ export const addPhotosToGallery = (galleryId, photos) => {
 
 export const allGallery = () => {
     return axios.get(`${API_URL}galleries`);
-}
+};
+
+export const oneGallery = (galleryId) => {
+    return axios.get(`${API_URL}gallery/${galleryId}`)
+};

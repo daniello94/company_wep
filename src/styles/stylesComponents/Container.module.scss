@@ -59,6 +59,15 @@
     width: 100%;
     z-index: 3;
 }
+.containerGallery{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 900000;
+    background-color: $black-color-08;
+    left: 0;
+    top: 0;
+}
 @include respond(small) {
     .textContext {
         align-items: flex-start;

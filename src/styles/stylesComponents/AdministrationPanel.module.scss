@@ -28,11 +28,12 @@
 }
 .viewsContent {
     @extend %commonMenuContent;
-    margin-top: 40px;
+    margin-top: 30px;
     background-color: $white-color-05;
     box-shadow: 4px 6px 8px $silver_color;
     padding: 10px;
-    height: 85vh;
+    width: 94.99%;
+    height: 90vh;
     overflow-y: auto;
 }
 
@@ -63,5 +64,6 @@
     .viewsContent {
         margin-top: 60px;
         width: 69%;
+        height: 80vh;
     }
 }

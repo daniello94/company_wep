@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Container from "../components/Container";
 import MyHeader from "../components/MyHeader";
 import MyButton from "../components/MyButton";
+import ViewsGallery from "./ViewsGallery";
 import styles from "../styles/stylesComponents/SmallGallery.module.scss";
 import { createGallery, addPhotosToGallery, allGallery } from "./api";
 export default function SmallGallery() {
@@ -10,8 +11,10 @@ export default function SmallGallery() {
     const [galleryId, setGalleryId] = useState(null);
     const [galleries, setGalleries] = useState([]);
     const [cerateGallery, setCreateGallery] = useState(false);
-    const [isActive, setActive] = useState("")
-    console.log(isActive);
+    const [isActive, setActive] = useState(false);
+    const [newGallery, setNewGallery] = useState(false);
+    const [galleryID, setGalleryID] = useState("");
+    const [clickImage, setImage] = useState("")
 
     const handleImageUpload = event => {
         setSelectedImages([...event.target.files]);
@@ -53,6 +56,7 @@ export default function SmallGallery() {
             setCreateGallery(false)
             alert('Zdjęcia zostały dodane do galerii.');
             setSelectedImages([])
+            setNewGallery(false)
             await refreshGalleries()
         } catch (error) {
             console.error(error);
@@ -76,25 +80,31 @@ export default function SmallGallery() {
     return (
         <Container>
             <MyHeader color={'red'}>Galeria zdjęć Portfolio</MyHeader>
-            <input
-                type="text"
-                placeholder="Nazwa galerii"
-                value={galleryName}
-                onChange={(e) => setGalleryName(e.target.value)}
-            />
-            <MyButton onClick={handleCreateGallery}>Utwórz galerię</MyButton>
-            {cerateGallery && (
-                <div>
-                    <input type="file" multiple onChange={handleImageUpload} />
-                    {selectedImages.length > 0 && (
-                        <MyButton onClick={handleAddPhotos}>Dodaj zdjęcia</MyButton>
+            <div className={styles.btnContent}>
+                <MyButton onClick={() => setNewGallery(true)}>Dodaj Galerię</MyButton>
+            </div>
+            {newGallery && (
+                <div className={styles.createPanelGallery}>
+                    <input
+                        type="text"
+                        placeholder="Nazwa galerii"
+                        value={galleryName}
+                        onChange={(e) => setGalleryName(e.target.value)}
+                    />
+                    <MyButton onClick={handleCreateGallery}>Utwórz galerię</MyButton>
+                    {cerateGallery && (
+                        <div>
+                            <input type="file" multiple onChange={handleImageUpload} />
+                            {selectedImages.map((image, index) => (
+                                <img key={index} src={URL.createObjectURL(image)} alt="Wybrane" style={{ maxWidth: '100px', maxHeight: '100px', margin: '10px' }} />
+                            ))}
+                            {selectedImages.length > 0 && (
+                                <MyButton onClick={handleAddPhotos}>Dodaj zdjęcia</MyButton>
+                            )}
+                        </div>
                     )}
                 </div>
             )}
-            <div>Panel miniaturek zdjęć</div>
-            {selectedImages.map((image, index) => (
-                <img key={index} src={URL.createObjectURL(image)} alt="Wybrane" style={{ maxWidth: '100px', maxHeight: '100px', margin: '10px' }} />
-            ))}
 
             <div className={styles.containerImageGallery}>
                 <h2>List of Galleries</h2>
@@ -107,7 +117,11 @@ export default function SmallGallery() {
                                 <ul>
                                     {gallery.gallery.photos.map((photo, index) => (
                                         <li key={index}>
-                                            <img className={styles[isActive]} onClick={() => setActive(isActive === "active" ? "disabled" : "active")} src={photo.photoUrl} alt={photo.namePhoto} />
+                                            <img onClick={() => {
+                                                setActive(isActive === true ? false : true)
+                                                setGalleryID(gallery._id);
+                                                setImage(photo.photoUrl)
+                                            }} src={photo.photoUrl} alt={photo.namePhoto} />
                                         </li>
                                     ))}
                                 </ul>
@@ -118,6 +132,11 @@ export default function SmallGallery() {
                     <p>No galleries found.</p>
                 )}
             </div>
+            {isActive && (
+                <Container galleryViews={true}  >
+                    <ViewsGallery setActive={setActive} galleryID={galleryID} clickImage={clickImage} />
+                </Container>
+            )};
         </Container>
     );
 }
