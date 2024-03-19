@@ -25,11 +25,16 @@
             "btn": {
                 "createGallery": "Nouvelle Galerie",
                 "addPhotos": "Ajouter de nouvelles photos",
-                "nameGallery": "Ajouter un nom de collection"
+                "nameGallery": "Ajouter un nom de collection",
+                "yes": "Oui",
+                "no": "Non",
+                "deleteGallery": "Supprimer la Galerie",
+                "delete": "Supprimer"
             },
             "MyHeader": "Mes Galeries",
             "notFoundGallery": "Aucune galerie disponible",
             "placeholder": "Nom de la Collection",
+            "questionDeleteGallery": "Êtes-vous sûr de vouloir supprimer cette galerie?",
             "textAlert": {
                 "nameGallery": "Veuillez fournir un nom pour la galerie.",
                 "cornetCreate": "La galerie a été créée. Vous pouvez maintenant ajouter des photos.",

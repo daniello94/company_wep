@@ -157,9 +157,9 @@ export default function SmallGallery() {
                                     {
                                         galleryId === gallery._id ? (
                                             <div className={styles.questionDelateGallery}>
-                                                <MyText questionDelateGallery={true}>Napewno chcesz usunąć galerię?</MyText>
-                                                <MyButton btnGallery={true} onClick={() => galleryDelete(gallery._id)}>Tak</MyButton>
-                                                <MyButton btnGallery={true} onClick={() => setGalleryId(null)}>Nie</MyButton>
+                                                <MyText questionDelateGallery={true}>{t('components.gallery.questionDeleteGallery')}</MyText>
+                                                <MyButton btnGallery={true} onClick={() => galleryDelete(gallery._id)}>{t('components.gallery.btn.yes')}</MyButton>
+                                                <MyButton btnGallery={true} onClick={() => setGalleryId(null)}>{t('components.gallery.btn.no')}</MyButton>
                                             </div>
                                         ) : (
                                             <>
@@ -167,8 +167,8 @@ export default function SmallGallery() {
                                                     setNewGallery(true);
                                                     setGalleryId(gallery._id);
                                                     setCreateGallery(true);
-                                                }}>Dodaj Zdjęcie</MyButton>
-                                                <MyButton btnGallery={true} onClick={() => setGalleryId(gallery._id)}>Usuń galerię</MyButton>
+                                                }}>{t('components.gallery.btn.addPhotos')}</MyButton>
+                                                <MyButton btnGallery={true} onClick={() => setGalleryId(gallery._id)}>{t('components.gallery.btn.deleteGallery')}</MyButton>
                                             </>
                                         )
                                     }
@@ -186,7 +186,7 @@ export default function SmallGallery() {
                                                 <MyButton onClick={() => {
                                                     togglePhotoFlag(gallery._id, photo._id)
                                                 }} btnGallery={true}>{photo.smallGallery ? "-" : "+"}</MyButton>
-                                                <MyButton onClick={() => delateImage(gallery._id, photo._id)} btnGallery={true}>Usuń</MyButton>
+                                                <MyButton onClick={() => delateImage(gallery._id, photo._id)} btnGallery={true}>{t('components.gallery.btn.delete')}</MyButton>
                                             </div>
                                         </li>
                                     ))}

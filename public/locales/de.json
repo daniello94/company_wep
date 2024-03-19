@@ -26,11 +26,16 @@
         "btn": {
             "createGallery": "Neue Galerie",
             "addPhotos": "Neue Fotos hinzufügen",
-            "nameGallery": "Sammlungsnamen hinzufügen"
+            "nameGallery": "Sammlungsnamen hinzufügen",
+            "yes": "Ja",
+            "no": "Nein",
+            "deleteGallery": "Galerie löschen",
+            "delete": "Löschen"
         },
         "MyHeader": "Meine Galerien",
         "notFoundGallery": "Keine Galerien verfügbar",
         "placeholder": "Name der Sammlung",
+        "questionDeleteGallery": "Sind Sie sicher, dass Sie diese Galerie löschen möchten?",
         "textAlert": {
             "nameGallery": "Bitte geben Sie einen Galerienamen an.",
             "cornetCreate": "Die Galerie wurde erstellt. Sie können jetzt Fotos hinzufügen.",
@@ -39,5 +44,5 @@
             "correctAddPhoto": "Die Fotos wurden der Galerie hinzugefügt.",
             "errorAddImage": "Beim Hinzufügen der Fotos ist ein Fehler aufgetreten."
         }
-    }    
+    }
 }

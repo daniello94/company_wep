@@ -25,11 +25,16 @@
             "btn": {
                 "createGallery": "Nieuwe Galerij",
                 "addPhotos": "Nieuwe foto's toevoegen",
-                "nameGallery": "Collectienaam toevoegen"
+                "nameGallery": "Collectienaam toevoegen",
+                "yes": "Ja",
+                "no": "Nee",
+                "deleteGallery": "Verwijder Galerij",
+                "delete": "Verwijderen"
             },
             "MyHeader": "Mijn Galerieën",
             "notFoundGallery": "Geen galerijen beschikbaar",
             "placeholder": "Naam van de Collectie",
+            "questionDeleteGallery": "Weet u zeker dat u deze galerij wilt verwijderen?",
             "textAlert": {
                 "nameGallery": "Geef alstublieft een galerijnaam.",
                 "cornetCreate": "De galerij is gecreëerd. U kunt nu foto's toevoegen.",
