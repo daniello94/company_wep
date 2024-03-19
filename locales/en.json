@@ -25,11 +25,16 @@
             "btn": {
                 "createGallery": "New Gallery",
                 "addPhotos": "Add New Photos",
-                "nameGallery": "Add Collection Name"
+                "nameGallery": "Add Collection Name",
+                "yes": "Yes",
+                "no": "No",
+                "deleteGallery": "Delete Gallery",
+                "delete": "Delete"
             },
             "MyHeader": "My Galleries",
             "notFoundGallery": "No Galleries Available",
             "placeholder": "Collection Name",
+            "questionDeleteGallery": "Are you sure you want to delete this gallery?",
             "textAlert": {
                 "nameGallery": "Please provide a gallery name.",
                 "cornetCreate": "Gallery has been created. You can now add photos.",
@@ -38,6 +43,6 @@
                 "correctAddPhoto": "Photos have been added to the gallery.",
                 "errorAddImage": "An error occurred while adding photos."
             }
-        }        
+        }
     }
 }
