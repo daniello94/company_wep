@@ -6,6 +6,7 @@ import Container from "../components/Container";
 import { useTranslation } from "react-i18next";
 import MyHeader from "../components/MyHeader";
 import MyButton from "../components/MyButton";
+import { FiXSquare } from "react-icons/fi";
 import ViewsGallery from "./ViewsGallery";
 import MyText from "../components/MyText";
 
@@ -114,8 +115,13 @@ export default function SmallGallery() {
             </div>
             {newGallery && (
                 <div className={styles.createPanelGallery}>
+                    <FiXSquare onClick={() => {
+                        setCreateGallery(false)
+                        setNewGallery(false)
+                        setGalleryId();
+                    }} className={styles.iconClose} />
                     {!cerateGallery && (
-                        <div>
+                        <div className={styles.createCollection}>
                             <input
                                 type="text"
                                 placeholder={t('components.gallery.placeholder')}
@@ -126,11 +132,14 @@ export default function SmallGallery() {
                         </div>
                     )}
                     {cerateGallery && (
-                        <div>
+                        <div className={styles.createCollection}>
                             <input type="file" multiple onChange={handleImageUpload} />
-                            {selectedImages.map((image, index) => (
-                                <img key={index} src={URL.createObjectURL(image)} alt="thisPhoto" style={{ maxWidth: '100px', maxHeight: '100px', margin: '10px' }} />
-                            ))}
+                            <div className={styles.imageCreate}>
+                                {selectedImages.map((image, index) => (
+                                    <img key={index} src={URL.createObjectURL(image)} alt="thisPhoto" style={{ maxWidth: '100px', maxHeight: '100px', margin: '10px' }} />
+                                ))}
+                            </div>
+
                             {selectedImages.length > 0 && (
                                 <MyButton onClick={handleAddPhotos}>{t('components.gallery.btn.addPhotos')}</MyButton>
                             )}
@@ -138,19 +147,33 @@ export default function SmallGallery() {
                     )}
                 </div>
             )}
-
             <div className={styles.containerImageGallery}>
                 {galleries.length > 0 ? (
                     <ul>
                         {galleries.map(gallery => (
                             <li key={gallery._id}>
                                 <h3>{gallery.gallery.nameGallery}</h3>
-                                <MyButton onClick={() => {
-                                    setNewGallery(true);
-                                    setGalleryId(gallery._id)
-                                    setCreateGallery(true)
-                                }}>Dodaj Zdjecie</MyButton>
-                                <MyButton onClick={() => galleryDelete(gallery._id)}>Usuń gakerie</MyButton>
+                                <div className={styles.btnContentGallery}>
+                                    {
+                                        galleryId === gallery._id ? (
+                                            <div className={styles.questionDelateGallery}>
+                                                <MyText questionDelateGallery={true}>Napewno chcesz usunąć galerię?</MyText>
+                                                <MyButton btnGallery={true} onClick={() => galleryDelete(gallery._id)}>Tak</MyButton>
+                                                <MyButton btnGallery={true} onClick={() => setGalleryId(null)}>Nie</MyButton>
+                                            </div>
+                                        ) : (
+                                            <>
+                                                <MyButton btnGallery={true} onClick={() => {
+                                                    setNewGallery(true);
+                                                    setGalleryId(gallery._id);
+                                                    setCreateGallery(true);
+                                                }}>Dodaj Zdjęcie</MyButton>
+                                                <MyButton btnGallery={true} onClick={() => setGalleryId(gallery._id)}>Usuń galerię</MyButton>
+                                            </>
+                                        )
+                                    }
+                                </div>
+
                                 <ul>
                                     {gallery.gallery.photos.map((photo, index) => (
                                         <li key={index}>

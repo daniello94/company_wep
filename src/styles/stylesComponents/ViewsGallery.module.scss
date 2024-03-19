@@ -43,20 +43,21 @@
 }
 @include respond(extra-medium){
     .contentGallery{
-        margin-top: 30px;
+        margin-top:0;
         .activeImage{
-            width: 100%;
+            width: 70%;
+            height: 39vw;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
          img{
-            width: 70%;
-            height: 70vh;
+            width: 60vw;
+            height: 100%;
          }
         }
         .dataImages{
-            margin-top: 20px;
+            margin-top: 5px;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;

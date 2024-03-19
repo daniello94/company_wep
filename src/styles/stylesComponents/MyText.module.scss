@@ -5,6 +5,10 @@
     max-width: 92%;
     letter-spacing: 1px;
 }
+.galleryDelete{
+  margin-bottom: 10px;
+  color: black;
+}
 @include respond(medium) {
   .text{
     max-width: 96%;

@@ -3,7 +3,8 @@ import styles from "../styles/stylesComponents/MyText.module.scss";
 
 const MyText = (props) => {
     const baseClasses = [
-        styles.text
+        styles.text,
+        props.questionDelateGallery ? styles.galleryDelete : null
     ]
     const className = baseClasses.filter(Boolean).join(" ");
     return (
