@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/company_wep/static/css/main.b26afdbb.css",
-    "main.js": "/company_wep/static/js/main.8aab8c05.js",
+    "main.css": "/company_wep/static/css/main.c070dcbc.css",
+    "main.js": "/company_wep/static/js/main.23343a1e.js",
     "static/media/biznes_images.jpg": "/company_wep/static/media/biznes_images.6a8feacdb0239c649348.jpg",
     "static/media/2149235_medium2000.png": "/company_wep/static/media/2149235_medium2000.2fc00f2e4363ffeb54b1.png",
     "static/media/Zdjęcie WhatsApp 2023-09-14 asdsdo 09.30.00.jpg": "/company_wep/static/media/Zdjęcie WhatsApp 2023-09-14 asdsdo 09.30.00.b0f9f764954ee97daad5.jpg",
     "static/media/logo-removebg-preview.png": "/company_wep/static/media/logo-removebg-preview.911e58ca2c0cc7d09c6d.png",
     "index.html": "/company_wep/index.html",
     "static/media/getFetch.cjs": "/company_wep/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.b26afdbb.css.map": "/company_wep/static/css/main.b26afdbb.css.map",
-    "main.8aab8c05.js.map": "/company_wep/static/js/main.8aab8c05.js.map"
+    "main.c070dcbc.css.map": "/company_wep/static/css/main.c070dcbc.css.map",
+    "main.23343a1e.js.map": "/company_wep/static/js/main.23343a1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b26afdbb.css",
-    "static/js/main.8aab8c05.js"
+    "static/css/main.c070dcbc.css",
+    "static/js/main.23343a1e.js"
   ]
 }
