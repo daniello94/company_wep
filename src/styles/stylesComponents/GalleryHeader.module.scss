@@ -1,0 +1,17 @@
+@import "../main.scss";
+.carouselImg {
+    width: 60vh;
+    height: 60vw;
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@include respond(extra-medium) {
+    .carouselImg {
+        max-width: 350px;
+        height: 250px;
+       margin-left: 0;
+       padding: 0;
+    }
+}

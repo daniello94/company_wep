@@ -10,7 +10,8 @@ const Container = React.forwardRef((props, ref) => {
         props.textContext ? styles.textContext : null,
         props.administration ? styles.administrationContainer : null,
         props.blok_row ? styles.containerBlokRow : null,
-        props.galleryViews ? styles.containerGallery : null
+        props.galleryViews ? styles.containerGallery : null,
+        props.galleryHeader ? styles.galleryHeader : null
     ]
     const classNames = baseClasses.filter(Boolean).join(' ');
     return (

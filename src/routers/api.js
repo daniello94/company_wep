@@ -38,3 +38,7 @@ export const delatePhoto = (galleryId, photoId) => {
 export const deleteGallery = (galleryId) => {
     return axios.delete(`${API_URL}galleries/${galleryId}`)
 };
+
+export const smallGallery = () => {
+    return axios.get(`${API_URL}findSmallGalleryPhotos`)
+};

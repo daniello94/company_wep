@@ -59,7 +59,19 @@
     width: 100%;
     z-index: 3;
 }
-.containerGallery{
+
+.galleryHeader {
+    width: 100%;
+    height: 60vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    background-color: $white-color-05;
+}
+.containerGallery {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -79,6 +91,9 @@
     .textContext {
         margin-top: 10px;
         align-items: center;
+    }
+    .galleryHeader {
+        height: 30vw;
     }
 }
 @include respond(extra-medium) {
