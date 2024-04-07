@@ -1,0 +1,88 @@
+@import "../main.scss";
+.contentPortfolio {
+    width: 95%;
+    .tablePortfolio {
+        width: 100%;
+        margin-top: 20px;
+        border: 1px solid $black-color-08;
+        border-radius: 3px;
+        thead,
+        tbody {
+            tr {
+                td {
+                    border: 1px solid $black-color-08;
+                    padding: 5px;
+                    text-align: center;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    text-align: left;
+                }
+                .tdBtn {
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+.iconCloseViews {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 2px;
+    color: $red-color;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 2px;
+    transition: 1s;
+    &:hover{
+        background-color: $red-color;
+        color: $white-color-05;
+    }
+}
+
+/* createNewPostPortfolio */
+
+.formAddPost{
+    margin-top: 30px;
+    width: 98%;
+    padding: 0;
+    text-align: center;
+    label{
+       select{
+        margin-bottom: 10px;
+       }
+    }
+}
+
+@include respond(extra-medium) {
+    .contentPortfolio {
+        width: 100%;
+        .tablePortfolio {
+            width: 100%;
+            tbody {
+                tr {
+                    width: 100%;
+                    .tdBtn {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                    }
+                }
+                label{
+                  width: 100%;
+                  background-color: aqua;
+                }
+            }
+        }
+    }
+    .formAddPost{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -6,7 +6,8 @@ const MyButton = (props) => {
         props.centerLarge ? styles.centerLarge : null,
         props.stylesLink ? styles.buttonMenu : null,
         props.active ? styles.clickButton : {},
-        props.btnGallery ? styles.galleryBtn : null
+        props.btnGallery ? styles.galleryBtn : null,
+        props.btnTable ? styles.btnTable : null
     ]
     const classNames = baseClasses.filter(Boolean).join(' ');
     return (

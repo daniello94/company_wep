@@ -1,0 +1,23 @@
+@import "../main.scss";
+%commonInput {
+    width: 100%;
+    padding: 5px;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+.input {
+    @extend %commonInput;
+    border: 2px solid $blue-color;
+
+    &:focus {
+        border: none;
+    }
+}
+.errorInput {
+    @extend %commonInput;
+    border: 2px solid $red-color;
+}
+
+.fromLabel{
+    margin-bottom: 5px;
+}

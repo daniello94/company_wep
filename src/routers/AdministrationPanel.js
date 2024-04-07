@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import Container from "../components/Container";
 import styles from "../styles/stylesComponents/AdministrationPanel.module.scss";
 import { BsChevronCompactDown, BsChevronUp } from "react-icons/bs";
 import SmallGallery from "../routers/SmallGallery";
-import MyLink from "../components/MyLink";
-import MyButton from "../components/MyButton";
+import Container from "../components/Container";
 import { useTranslation } from "react-i18next";
+import MyButton from "../components/MyButton";
+import MyLink from "../components/MyLink";
+import Portfolio from "./Portfolio";
 export default function AdministrationPanel() {
     const { t } = useTranslation()
     const [isClose, setClose] = useState('active');
@@ -45,6 +46,11 @@ export default function AdministrationPanel() {
                                         toggleMenuIfSmallScreen()
                                     }} stylesLink={true}>{t('components.administrationPanel.menu.gallery')}</MyButton>
                                     </li>
+                                    <li><MyButton active={viewsComponents === "portfolio"} onClick={() => {
+                                        setComponents("portfolio")
+                                        toggleMenuIfSmallScreen()
+                                    }} stylesLink={true}>Portfolio</MyButton>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -53,6 +59,9 @@ export default function AdministrationPanel() {
                 <div className={styles.viewsContent}>
                     {viewsComponents === "gallery" && (
                         <SmallGallery />
+                    )}
+                    {viewsComponents === 'portfolio' && (
+                        <Portfolio />
                     )}
                 </div>
             </Container>

@@ -5,14 +5,12 @@ import styles from "../styles/stylesComponents/GalleryHeader.module.scss";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-
 export default function GalleryHeader() {
     const [myGallery, setMyGallery] = useState({
         smallGalleryPhotos: []
     });
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 910);
     const centerSlidePercentage = isSmallScreen ? 100 : 30;
-
 
     useEffect(() => {
         const setGallery = async () => {
@@ -36,7 +34,7 @@ export default function GalleryHeader() {
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    }, [])
+    }, []);
 
     return (
         <Container galleryHeader={true}>
